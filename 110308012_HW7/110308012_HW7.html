@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Janet's Profile</title>
+	<style type="text/css">
+		body {
+			  font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f4f4f4;
+            }
+
+        .main-container {
+        	  background-color: #eeede1;
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              padding: 20px;
+              flex-wrap: wrap;
+              max-width: 1100px;
+              margin: 0 auto;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+        .left-panel {
+              background-color: #333;
+              color: white;
+              padding: 20px;
+              flex: 1;
+              max-width: 250px;
+              height: auto;
+              text-align: center;
+          }
+
+        .left-panel .photo-panel {
+              width: 100%;
+              border-radius: 50%;
+              margin-bottom: 20px;
+              height: auto;
+            }
+
+        .left-panel h1 {
+              text-align: center;
+              margin-bottom: 20px;
+            }
+
+        .left-panel .photo-panel .text-content {
+              margin-bottom: 30px;
+              text-align: center;
+              height: auto;
+            }
+
+        .left-panel .text-content .logo {
+              width: 100%;
+              height: auto;
+              display: block;
+              margin: 10px auto;
+            }
+
+        .text-content  a {
+              color: white;
+              text-decoration: none;
+            }
+            
+        .text-content  a:hover {
+              text-decoration: underline;
+            }        
+
+        .right-panel {
+              background-color: white;
+              flex: 2;
+              padding: 20px;
+              max-width: 400px;
+            }
+
+        .year ul, .homework ul {
+              list-style-type: none;
+              padding: 0;
+              margin-bottom: 20px;
+              margin-top: 60px; 
+            }
+
+        .year li, .homework li {
+              margin-bottom: 10px;
+            }    
+
+        .right-panel h2 {
+              margin-top: 20;
+              color: #333;
+              font-size: 1.5em;
+              margin-bottom: 50px; 
+              padding-bottom: 5px; 
+              border-bottom: 2px solid #ccc;
+              margin-top: 60px; 
+              color: #333;
+            } 
+
+        .homework a {
+              color: gray;
+              text-decoration: none;
+            }
+
+        .homework a:hover {
+              text-decoration: underline;
+            } 
+
+        .homework h2 {
+              margin-bottom: 20px;
+            }     
+
+        .music-icons {
+              display: flex;
+              gap: 20px;
+              margin-top: 10px;
+            }
+
+        .music-icons div {
+              text-align: center;
+            }
+
+        .music-icons img {
+              width: 50px;
+              height: 50px;
+            }
+
+        .music-icons a {
+              color: black;
+              text-decoration: none;
+            } 
+            
+        .music-icons a:hover {
+              text-decoration: underline;
+            }        
+
+        .note {
+              margin-top: 20px;
+              font-size: 0.8em;
+              color: gray;
+              text-decoration: none;
+            }
+
+        .form-container {
+              display: none;
+              margin-top: 20px;
+              padding: 10px;
+              border: 1px solid #ccc;
+              background-color: #fff;
+              border-radius: 5px;
+            }
+
+        .form-container input {
+              display: block;
+              margin: 10px auto;
+              padding: 5px;
+              width: 80%;
+            }
+
+        .form-container button {
+              display: block;
+              margin: 10px auto;
+              padding: 5px 10px;
+              background-color: #333;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+
+        .form-container button:hover {
+              background-color: #555;
+            }
+	</style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <img src="Koala.jpeg" width="250" height="250" alt="Profile Picture" class="photo-panel">
+            <h1 id="name-label">Janet</h1>
+            <button id="edit-btn">Edit</button>
+            <section class="text-content">
+                <h2>ABOUT ME</h2>
+                <p>
+                    I am a student in the Department of Risk Management and Insurance at National Chengchi University.
+                    I am interested in studying programming and computer science fundamentals. I have experience in
+                    writing R, HTML, CSS, VBA.
+                </p>
+            </section>
+            <section class="text-content">
+                <h2>CONTACT</h2>
+                <p><a href="mailto:110308012@nccu.edu.tw">110308012@nccu.edu.tw</a></p>
+                <img src="nccu.png" width="300" height="80" alt="University Logo" class="logo">
+            </section>
+        </div>
+        <div class="right-panel">
+            <section class="year">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>2023 - now</strong> National Chengchi University, Department of RMI - Risk Management and Insurance
+                    </li>
+                    <li>
+                        <strong>2021 - 2023</strong> Taichung Municipal Dajia Senior High School
+                    </li>
+                    <li>
+                        <strong>2018 - 2021</strong> Taichung Municipal Rih-Nan Junior High School
+                    </li>
+                </ul>
+            </section>
+            <section class="homework">
+                <h2>Homework List</h2>
+                <ul>
+                    <li>HW1 - <a href="https://github.com/110306051/TA_0929" target="_blank">https://github.com/Tsai039/HW1-110308012.git</a></li>
+                    <li>HW2 - <a href="https://github.com/110306051/TA_0929" target="_blank">https://github.com/Tsai039/HW1-110308012.git</a></li>
+                    <li>HW3 - <a href="https://github.com/110306051/TA_0929" target="_blank">https://github.com/Tsai039/HW1-110308012.git</a></li>
+                </ul>
+            </section>
+            <section class="music">
+                <h2>Favorite Music</h2>
+                <div class="music-icons" id="music-list">
+                    <div><img src="spotify.png" width="50" height="50" alt="Spotify"><p><a href="https://open.spotify.com/track/15cQVPbbwv0sZXrHRIAZeX" target="_blank">When I'm with you</a></p></div>
+                    <div><img src="spotify.png" width="50" height="50" alt="Spotify"><p><a href="https://open.spotify.com/track/198zDKzyktXRG1PGpidY9h" target="_blank">Drip</a></p></div>
+                    <div><img src="spotify.png" width="50" height="50" alt="Spotify"><p><a href="https://open.spotify.com/track/1BxfuPKGuaTgP7aM0Bbdwr" target="_blank">Cruel Summer</a></p></div>
+                    <div><img src="spotify.png" width="50" height="50" alt="Spotify"><p><a href="https://open.spotify.com/track/2m6Ko3CY1qXNNja8AlugNc" target="_blank">Angel Baby</a></p></div>
+                </div>
+                <button id="add-music-btn">Add Music</button>
+                <div class="form-container" id="music-form">
+                    <input type="text" id="music-link" placeholder="Enter music link">
+                    <input type="text" id="music-name" placeholder="Enter music name">
+                    <button id="submit-music">Submit</button>
+                </div>
+                <p class="note">
+                    Note: When I'm with you, Cruel Summer and Angel Baby are sentimental.Drip is Hiphop.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Edit name functionality
+        const nameLabel = document.getElementById('name-label');
+        const editBtn = document.getElementById('edit-btn');
+
+        editBtn.addEventListener('click', () => {
+            if (editBtn.textContent === 'Edit') {
+                const nameInput = document.createElement('input');
+                nameInput.type = 'text';
+                nameInput.value = nameLabel.textContent;
+                nameInput.id = 'name-input';
+
+                nameLabel.replaceWith(nameInput);
+                editBtn.textContent = 'Save';
+            } else {
+                const nameInput = document.getElementById('name-input');
+                nameLabel.textContent = nameInput.value;
+
+                nameInput.replaceWith(nameLabel);
+                editBtn.textContent = 'Edit';
+            }
+        });
+
+        // Add music functionality
+        const addMusicBtn = document.getElementById('add-music-btn');
+        const musicForm = document.getElementById('music-form');
+        const submitMusicBtn = document.getElementById('submit-music');
+        const musicList = document.getElementById('music-list');
+
+        addMusicBtn.addEventListener('click', () => {
+            musicForm.style.display = 'block';
+        });
+
+        submitMusicBtn.addEventListener('click', () => {
+            const musicLink = document.getElementById('music-link').value.trim();
+            const musicName = document.getElementById('music-name').value.trim();
+
+            if (musicLink && musicName) {
+                const musicDiv = document.createElement('div');
+
+                const musicImg = document.createElement('img');
+                musicImg.src = 'spotify.png';
+                musicImg.alt = 'Spotify';
+
+                const musicP = document.createElement('p');
+                const musicA = document.createElement('a');
+                musicA.href = musicLink;
+                musicA.target = '_blank';
+                musicA.textContent = musicName;
+
+                musicP.appendChild(musicA);
+                musicDiv.appendChild(musicImg);
+                musicDiv.appendChild(musicP);
+                musicList.appendChild(musicDiv);
+
+                musicForm.style.display = 'none';
+                document.getElementById('music-link').value = '';
+                document.getElementById('music-name').value = '';
+            } else {
+                alert('Please fill in both fields!');
+            }
+        });
+    </script>
+</body>
+</html>
+
